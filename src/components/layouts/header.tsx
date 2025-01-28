@@ -5,7 +5,7 @@ export default function Header({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "bg-transparent absolute top-0 left-0 right-0 flex justify-stretch font-dmSans px-20 py-14",
+        "bg-transparent absolute top-0 left-0 right-0 flex justify-stretch font-dmSans px-20 py-14 z-50",
         className
       )}
     >
