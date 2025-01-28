@@ -56,7 +56,7 @@ export default function Hero() {
             <div className='bg-gradient-to-br from-[#2CCA5D]/40 via-white/10 to-transparent p-[2px] rounded-full'>
               <button className='relative flex items-center justify-center gap-5 rounded-full px-7 py-5 bg-gradient-to-b from-[#21202E] to-primaryBackground overflow-hidden'>
                 <img
-                  src='/pages/home/icons\whatsapp-icon.svg'
+                  src='/pages/home/icons/whatsapp-icon.svg'
                   alt='Whatsapp logo'
                 />
                 <h4 className='text-white font-black font-urbanist uppercase text-[17px] text-nowrap leading-none'>
