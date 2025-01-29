@@ -1,8 +1,10 @@
 import Header from "../../layouts/header";
+import HeroGradientSvg from "./hero-gradient-svg";
 
 export default function Hero() {
   return (
-    <div className='min-h-[max(900px,100dvh)] bg-[url("/pages/home/hero-bg-svg.svg")] bg-repeat bg-top flex flex-col gap-5 items-center justify-between h-full font-dmSans'>
+    <div className='min-h-[max(900px,100dvh)] bg-[url("/pages/home/hero-bg-svg.svg")] bg-repeat bg-top flex flex-col gap-5 items-center justify-between h-full font-dmSans relative'>
+      <HeroGradientSvg />
       <Header className='opacity-0 static' />
       <div className='flex flex-col justify-center items-center text-[132px] tracking-tight'>
         <h1 className='bg-gradient-to-b from-white via-white to-[#999999] bg-clip-text text-transparent text-center leading-none -mb-3'>
