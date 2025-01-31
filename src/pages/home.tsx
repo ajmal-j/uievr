@@ -1,5 +1,6 @@
 import Hero from "@/components/pages/home/hero";
 import OurClients from "@/components/pages/home/our-clients";
+import OurServices from "@/components/pages/home/our-services";
 import StepsToWorkWithUs from "@/components/pages/home/steps-to-work-with-us";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
       <Hero />
       <OurClients />
       <StepsToWorkWithUs />
-      <div>our services</div>
+      <OurServices />
     </div>
   );
 }
