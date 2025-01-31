@@ -13,6 +13,8 @@ export default {
         dmSans: ["DM Sans", "sans-serif"],
         outfit: ["Outfit", "sans-serif"],
         urbanist: ["Urbanist", "sans-serif"],
+        samsungSansBold: ["Samsung Sharp Sans Bold", "sans-serif"],
+        samsungSansMedium: ["Samsung Sharp Sans Medium", "sans-serif"],
       },
       colors: {
         background: "hsl(var(--background))",
