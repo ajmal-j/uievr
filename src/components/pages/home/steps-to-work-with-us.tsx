@@ -24,10 +24,10 @@ export default function StepsToWorkWithUs() {
         <div className='flex items-center justify-center absolute top-[20%] -translate-y-1/2 left-0 right-0 gap-20'>
           <div className='flex-1'></div>
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={{ scale: 0 }}
             animate={{
-              opacity: isInView ? 1 : 0,
-              transition: { delay: 1, duration: 1 },
+              scale: isInView ? 1 : 0,
+              transition: { delay: 1.8, duration: 0.2 },
             }}
             className='size-[113px] border-[7px] border-[#0E0E0E] bg-secondaryBackground rounded-full shadow-[0px_0px_48px_0px_#0E0E0E] grid place-content-center relative'
           >
@@ -42,8 +42,8 @@ export default function StepsToWorkWithUs() {
               opacity: isInView ? 1 : 0,
               scale: isInView ? 1 : 0.5,
               transition: {
-                opacity: { duration: 1, delay: 1 },
-                scale: { type: "spring", bounce: 0.5, duration: 1, delay: 1 },
+                opacity: { duration: 1, delay: 1.8 },
+                scale: { type: "spring", bounce: 0.5, duration: 1, delay: 1.8 },
               },
             }}
             className='flex-1 flex justify-start relative object-center'
@@ -81,8 +81,8 @@ export default function StepsToWorkWithUs() {
               opacity: isInView ? 1 : 0,
               scale: isInView ? 1 : 0.5,
               transition: {
-                opacity: { duration: 1, delay: 2 },
-                scale: { type: "spring", bounce: 0.5, duration: 1, delay: 2 },
+                opacity: { duration: 1, delay: 2.3 },
+                scale: { type: "spring", bounce: 0.5, duration: 1, delay: 2.3 },
               },
             }}
             className='flex-1 flex justify-end relative'
@@ -114,10 +114,10 @@ export default function StepsToWorkWithUs() {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={{ scale: 0 }}
             animate={{
-              opacity: isInView ? 1 : 0,
-              transition: { delay: 1.5, duration: 1 },
+              scale: isInView ? 1 : 0,
+              transition: { delay: 2.3, duration: 0.2 },
             }}
             className='size-[113px] border-[7px] border-[#0E0E0E] bg-secondaryBackground rounded-full shadow-[0px_0px_48px_0px_#0E0E0E] grid place-content-center relative'
           >
@@ -131,10 +131,10 @@ export default function StepsToWorkWithUs() {
         <div className='flex items-center justify-center absolute top-[80%] -translate-y-1/2 left-0 right-0 gap-20'>
           <div className='flex-1'></div>
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={{ scale: 0 }}
             animate={{
-              opacity: isInView ? 1 : 0,
-              transition: { delay: 2, duration: 1 },
+              scale: isInView ? 1 : 0,
+              transition: { delay: 2.9, duration: 0.2 },
             }}
             className='size-[113px] border-[7px] border-[#0E0E0E] bg-secondaryBackground rounded-full shadow-[0px_0px_48px_0px_#0E0E0E] grid place-content-center relative'
           >
@@ -149,8 +149,13 @@ export default function StepsToWorkWithUs() {
               opacity: isInView ? 1 : 0,
               scale: isInView ? 1 : 0.5,
               transition: {
-                opacity: { duration: 1, delay: 3 },
-                scale: { type: "spring", bounce: 0.5, duration: 1, delay: 3 },
+                opacity: { duration: 1, delay: 2.85 },
+                scale: {
+                  type: "spring",
+                  bounce: 0.5,
+                  duration: 1,
+                  delay: 2.85,
+                },
               },
             }}
             className='flex-1 flex justify-start relative'
