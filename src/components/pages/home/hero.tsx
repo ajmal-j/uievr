@@ -3,7 +3,7 @@ import HeroGradientSvg from "./hero-gradient-svg";
 
 export default function Hero() {
   return (
-    <div className='min-h-[max(900px,100dvh)] bg-[url("/pages/home/hero-bg-svg.svg")] bg-repeat bg-top flex flex-col gap-5 items-center justify-between h-full font-dmSans relative'>
+    <div className='min-h-[max(950px,100dvh)] bg-[url("/pages/home/hero-bg-svg.svg")] bg-repeat bg-top flex flex-col gap-5 items-center justify-between h-full font-dmSans relative'>
       <HeroGradientSvg />
       <Header className='opacity-0 static' />
       <div className='flex flex-col justify-center items-center text-[132px] tracking-tight'>

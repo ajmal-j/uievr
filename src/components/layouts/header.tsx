@@ -10,10 +10,12 @@ export default function Header({ className }: { className?: string }) {
       )}
     >
       <div className='flex-1'></div>
-      <div className='flex-1'>
-        <h2 className='bg-gradient-to-b from-white via-white to-[#999999] bg-clip-text text-transparent text-[71.5px] font-dmSans text-center leading-none tracking-tight'>
-          Uievr
-        </h2>
+      <div className='flex-1 flex items-center justify-center'>
+        <img
+          src='/layout/header/logo-with-title-light.svg'
+          className='w-[210px] object-contain'
+          alt=''
+        />
       </div>
       <div className='flex-1 flex items-center'>
         <div className='w-full flex items-center justify-end gap-10 h-[50px]'>
