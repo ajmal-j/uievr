@@ -25,8 +25,8 @@ const data = [
 
 export default function EvrExplanation() {
   return (
-    <div className='centered-wrapper-custom-width max-w-[1700px] flex flex-col gap-10'>
-      <div className='grid grid-cols-3'>
+    <div className="centered-wrapper-custom-width max-w-[1700px] flex flex-col gap-10">
+      <div className="grid grid-cols-3">
         {data.map((item, index) => (
           <motion.div
             initial={{ opacity: 0, y: 100 }}
@@ -38,10 +38,10 @@ export default function EvrExplanation() {
               delay: 0.1 * (index + 1),
             }}
             key={index}
-            className='flex items-start justify-center'
+            className="flex items-start justify-center"
           >
-            <div className='flex items-center justify-center flex-col gap-3'>
-              <h3 className='text-nowrap bg bg-gradient-to-r from-[#B9FD50] to-[#FFFFFF] inline-block text-transparent bg-clip-text px-[1px] text-[37px] text-center font-samsungSansBold'>
+            <div className="flex items-center justify-center flex-col gap-3">
+              <h3 className="text-nowrap bg bg-gradient-to-r from-[#B9FD50] to-[#FFFFFF] inline-block text-transparent bg-clip-text px-[1px] text-[37px] text-center font-samsungSansBold">
                 {item.title}
               </h3>
               <p
@@ -57,12 +57,12 @@ export default function EvrExplanation() {
         ))}
       </div>
 
-      <div className='flex items-center justify-between'>
+      <div className="flex items-center justify-between">
         <motion.h1
           initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
-            transition: { duration: 2, ease: "easeInOut", delay: 0.3 },
+            transition: { duration: 2, ease: "easeInOut", delay: 0.1 },
           }}
           viewport={{
             once: true,
@@ -83,7 +83,7 @@ export default function EvrExplanation() {
           initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
-            transition: { duration: 2, ease: "easeInOut", delay: 0.6 },
+            transition: { duration: 2, ease: "easeInOut", delay: 1.5 },
           }}
           viewport={{
             once: true,
@@ -104,7 +104,7 @@ export default function EvrExplanation() {
           initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
-            transition: { duration: 2, ease: "easeInOut", delay: 0.9 },
+            transition: { duration: 2, ease: "easeInOut", delay: 2.2 },
           }}
           viewport={{
             once: true,
@@ -123,7 +123,7 @@ export default function EvrExplanation() {
         </motion.h1>
       </div>
 
-      <div className='grid grid-cols-3'>
+      <div className="grid grid-cols-3">
         {data.map((item, index) => (
           <motion.div
             initial={{ opacity: 0, y: 100 }}
@@ -135,10 +135,10 @@ export default function EvrExplanation() {
               delay: 0.1 * (index + 4),
             }}
             key={index + 3}
-            className='flex items-start justify-center'
+            className="flex items-start justify-center"
           >
-            <div className='flex items-center justify-center flex-col gap-3'>
-              <h3 className='text-nowrap bg bg-gradient-to-r from-[#B9FD50] to-[#FFFFFF] inline-block text-transparent bg-clip-text px-[1px] text-[37px] text-center font-samsungSansBold'>
+            <div className="flex items-center justify-center flex-col gap-3">
+              <h3 className="text-nowrap bg bg-gradient-to-r from-[#B9FD50] to-[#FFFFFF] inline-block text-transparent bg-clip-text px-[1px] text-[37px] text-center font-samsungSansBold">
                 {item.title}
               </h3>
               <p
