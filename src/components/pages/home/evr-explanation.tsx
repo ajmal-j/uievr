@@ -27,7 +27,7 @@ const data = [
 
 export default function EvrExplanation() {
   return (
-    <div className='centered-wrapper-custom-width max-w-[1700px] flex flex-col gap-10'>
+    <div className='centered-wrapper-custom-width max-w-[1700px] flex flex-col gap-10 relative'>
       <div className='flex w-full flex-col place-self-center max-w-[1240px] pb-10'>
         <GradientSubHeading>Our Brand</GradientSubHeading>
         <GradientHeading>What, we are !</GradientHeading>
@@ -68,7 +68,7 @@ export default function EvrExplanation() {
           initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
-            transition: { duration: 2, ease: "easeInOut", delay: 0.1 },
+            transition: { duration: 2, ease: "easeInOut", delay: 0.4 },
           }}
           viewport={{
             once: true,
@@ -89,7 +89,7 @@ export default function EvrExplanation() {
           initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
-            transition: { duration: 2, ease: "easeInOut", delay: 1.5 },
+            transition: { duration: 2, ease: "easeInOut", delay: 1.2 },
           }}
           viewport={{
             once: true,
@@ -159,6 +159,139 @@ export default function EvrExplanation() {
           </motion.div>
         ))}
       </div>
+      <motion.img
+        initial={{
+          opacity: 0,
+        }}
+        viewport={{
+          once: true,
+        }}
+        whileInView={{
+          opacity: 1,
+          transition: {
+            duration: 2,
+            ease: "easeInOut",
+            delay: 3,
+          },
+        }}
+        src='/pages/home/elements/1.svg'
+        className='h-[150px] absolute top-1/2 left-[1.5%] -translate-y-[70%]'
+        alt='connecting arrow'
+      />
+      <motion.img
+        initial={{
+          opacity: 0,
+        }}
+        viewport={{
+          once: true,
+        }}
+        whileInView={{
+          opacity: 1,
+          transition: {
+            duration: 2,
+            ease: "easeInOut",
+            delay: 3,
+          },
+        }}
+        src='/pages/home/elements/2.svg'
+        className='h-[200px] absolute top-1/2 left-[58%] -translate-y-[55%]'
+        alt='connecting arrow'
+      />
+      <motion.img
+        initial={{
+          opacity: 0,
+        }}
+        viewport={{
+          once: true,
+        }}
+        whileInView={{
+          opacity: 1,
+          transition: {
+            duration: 2,
+            ease: "easeInOut",
+            delay: 3,
+          },
+        }}
+        src='/pages/home/elements/3.svg'
+        className='h-[190px] absolute top-1/2 right-[0%] -translate-y-[70%]'
+        alt='connecting arrow'
+      />
+      <motion.img
+        initial={{
+          opacity: 0,
+        }}
+        viewport={{
+          once: true,
+        }}
+        whileInView={{
+          opacity: 1,
+          transition: {
+            duration: 2,
+            ease: "easeInOut",
+            delay: 3,
+          },
+        }}
+        src='/pages/home/elements/4-1.svg'
+        className='h-[120px] absolute top-1/2 left-[1%] translate-y-[150%]'
+        alt='connecting arrow'
+      />
+      <motion.img
+        initial={{
+          opacity: 0,
+        }}
+        viewport={{
+          once: true,
+        }}
+        whileInView={{
+          opacity: 1,
+          transition: {
+            duration: 2,
+            ease: "easeInOut",
+            delay: 3,
+          },
+        }}
+        src='/pages/home/elements/4-2.svg'
+        className='h-[170px] absolute top-1/2 left-[30%] translate-y-[100%]'
+        alt='connecting arrow'
+      />
+      <motion.img
+        initial={{
+          opacity: 0,
+        }}
+        viewport={{
+          once: true,
+        }}
+        whileInView={{
+          opacity: 1,
+          transition: {
+            duration: 2,
+            ease: "easeInOut",
+            delay: 3,
+          },
+        }}
+        src='/pages/home/elements/5.svg'
+        className='h-[290px] absolute top-1/2 right-[25%] translate-y-[40%]'
+        alt='connecting arrow'
+      />
+      <motion.img
+        initial={{
+          opacity: 0,
+        }}
+        viewport={{
+          once: true,
+        }}
+        whileInView={{
+          opacity: 1,
+          transition: {
+            duration: 2,
+            ease: "easeInOut",
+            delay: 3,
+          },
+        }}
+        src='/pages/home/elements/6.svg'
+        className='h-[180px] absolute top-1/2 right-[0%] translate-y-[95%]'
+        alt='connecting arrow'
+      />
     </div>
   );
 }
