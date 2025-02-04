@@ -1,4 +1,6 @@
 import "@/assets/fonts/style.css";
+import GradientHeading from "@/components/ui/gradient-heading";
+import GradientSubHeading from "@/components/ui/gradient-subHeading";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 
@@ -26,6 +28,10 @@ const data = [
 export default function EvrExplanation() {
   return (
     <div className='centered-wrapper-custom-width max-w-[1700px] flex flex-col gap-10'>
+      <div className='flex w-full flex-col place-self-center max-w-[1240px] pb-10'>
+        <GradientSubHeading>Our Brand</GradientSubHeading>
+        <GradientHeading>What, we are !</GradientHeading>
+      </div>
       <div className='grid grid-cols-3'>
         {data.map((item, index) => (
           <motion.div
