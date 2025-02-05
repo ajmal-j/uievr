@@ -1,4 +1,5 @@
 import ClientTestimonials from "@/components/pages/home/client-testimonials";
+import Contact from "@/components/pages/home/contact";
 import EvrExplanation from "@/components/pages/home/evr-explanation";
 import Hero from "@/components/pages/home/hero";
 import LetsWorkGradientText from "@/components/pages/home/lets-work-gradient-text";
@@ -20,6 +21,7 @@ export default function Home() {
       <OurTeam />
       <ClientTestimonials />
       <LetsWorkGradientText />
+      <Contact />
     </div>
   );
 }
