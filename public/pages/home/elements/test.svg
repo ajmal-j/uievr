@@ -1,0 +1,22 @@
+<svg width="1357" height="1009" viewBox="0 0 1357 1009" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear" x1="1167.99" y1="859.444" x2="1167.99" y2="148.14" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white"/>
+      <stop offset="0.167353" stop-color="#B9FD50"/>
+      <stop offset="0.39751" stop-color="#279248"/>
+      <stop offset="0.606743" stop-color="#279248"/>
+      <stop offset="0.845" stop-color="#279248"/>
+      <stop offset="1" stop-color="white"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="492.5" y1="859.847" x2="492.5" y2="148.208" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white"/>
+      <stop offset="0.167353" stop-color="#B9FD50"/>
+      <stop offset="0.39751" stop-color="#279248"/>
+      <stop offset="0.606743" stop-color="#279248"/>
+      <stop offset="0.845" stop-color="#279248"/>
+      <stop offset="1" stop-color="white"/>
+    </linearGradient>
+  </defs>
+  <path d="M982 2.99987C1187.44 2.99988 1353.98 227.423 1353.98 504.264C1353.98 781.104 1187.44 1005.53 982 1005.53" stroke="url(#paint0_linear)" stroke-width="5.67041" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M982 3.00005C441.313 3.00007 2.99997 227.529 2.99998 504.5C2.99999 781.471 441.313 1006 982 1006" stroke="url(#paint1_linear)" stroke-width="5.67041" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

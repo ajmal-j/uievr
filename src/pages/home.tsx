@@ -1,3 +1,4 @@
+import ClientTestimonials from "@/components/pages/home/client-testimonials";
 import EvrExplanation from "@/components/pages/home/evr-explanation";
 import Hero from "@/components/pages/home/hero";
 import OurClients from "@/components/pages/home/our-clients";
@@ -16,6 +17,7 @@ export default function Home() {
       <EvrExplanation />
       <OurWorks />
       <OurTeam />
+      <ClientTestimonials />
     </div>
   );
 }
