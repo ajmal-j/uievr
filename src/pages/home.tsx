@@ -2,6 +2,7 @@ import ClientTestimonials from "@/components/pages/home/client-testimonials";
 import Contact from "@/components/pages/home/contact";
 import EvrExplanation from "@/components/pages/home/evr-explanation";
 import Hero from "@/components/pages/home/hero";
+import InfiniteHorizontalMovingCards from "@/components/pages/home/infinite-horizontal-moving-cards";
 import LetsWorkGradientText from "@/components/pages/home/lets-work-gradient-text";
 import OurClients from "@/components/pages/home/our-clients";
 import OurServices from "@/components/pages/home/our-services";
@@ -22,6 +23,7 @@ export default function Home() {
       <ClientTestimonials />
       <LetsWorkGradientText />
       <Contact />
+      <InfiniteHorizontalMovingCards />
     </div>
   );
 }
