@@ -1,6 +1,7 @@
 import ClientTestimonials from "@/components/pages/home/client-testimonials";
 import EvrExplanation from "@/components/pages/home/evr-explanation";
 import Hero from "@/components/pages/home/hero";
+import LetsWorkGradientText from "@/components/pages/home/lets-work-gradient-text";
 import OurClients from "@/components/pages/home/our-clients";
 import OurServices from "@/components/pages/home/our-services";
 import OurTeam from "@/components/pages/home/our-team";
@@ -18,6 +19,7 @@ export default function Home() {
       <OurWorks />
       <OurTeam />
       <ClientTestimonials />
+      <LetsWorkGradientText />
     </div>
   );
 }
