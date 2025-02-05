@@ -2,6 +2,7 @@ import EvrExplanation from "@/components/pages/home/evr-explanation";
 import Hero from "@/components/pages/home/hero";
 import OurClients from "@/components/pages/home/our-clients";
 import OurServices from "@/components/pages/home/our-services";
+import OurTeam from "@/components/pages/home/our-team";
 import OurWorks from "@/components/pages/home/our-works";
 import StepsToWorkWithUs from "@/components/pages/home/steps-to-work-with-us";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <OurServices />
       <EvrExplanation />
       <OurWorks />
+      <OurTeam />
     </div>
   );
 }
