@@ -1,3 +1,4 @@
+import Footer from "@/components/layouts/footer";
 import ClientTestimonials from "@/components/pages/home/client-testimonials";
 import Contact from "@/components/pages/home/contact";
 import EvrExplanation from "@/components/pages/home/evr-explanation";
@@ -12,7 +13,7 @@ import StepsToWorkWithUs from "@/components/pages/home/steps-to-work-with-us";
 
 export default function Home() {
   return (
-    <div className='overflow-hidden space-y-28 pb-36'>
+    <div className='overflow-hidden space-y-28 pb-20'>
       <Hero />
       <OurClients />
       <StepsToWorkWithUs />
@@ -24,6 +25,7 @@ export default function Home() {
       <LetsWorkGradientText />
       <Contact />
       <InfiniteHorizontalMovingCards />
+      <Footer />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function InfiniteHorizontalMovingCards() {
   return (
-    <div className='relative overflow-hidden whitespace-nowrap bg-[#101419] pt-12 pb-14 flex items-center justify-start gap-24'>
+    <div className='relative border-t border-t-white/15 overflow-hidden whitespace-nowrap bg-[#101419] pt-12 pb-14 flex items-center justify-start gap-24'>
       <motion.div
         className='flex items-center gap-24 text-gray-400 text-3xl font-medium'
         animate={{
