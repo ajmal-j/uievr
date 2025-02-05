@@ -73,3 +73,18 @@
     @apply mx-auto lg:px-7 px-5 lg:py-16 py-12;
   }
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  background-color: #080716;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b9fd50;
+  border-radius: 50px;
+}

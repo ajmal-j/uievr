@@ -17,7 +17,7 @@ export default function Hero() {
           apps & websites
         </h1>
       </div>
-      <div className='w-full px-20 flex flex-col items-center justify-center py-14 gap-1  z-10'>
+      <div className='w-full px-20 flex flex-col items-center justify-center pt-10 pb-5 gap-1 z-10'>
         <button className='size-[132px] border grid place-content-center border-white rounded-full'>
           <img
             src='/pages/home/icons/double-chevron-down.svg'
