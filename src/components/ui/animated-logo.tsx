@@ -1,0 +1,105 @@
+import { motion } from "framer-motion";
+
+const draw = {
+  hidden: { pathLength: 0, opacity: 0.3, fillOpacity: 0.3 },
+  visible: (i: number) => ({
+    pathLength: 1,
+    fillOpacity: 1,
+    opacity: 1,
+    transition: {
+      pathLength: {
+        delay: i * 0.5,
+        type: "tween",
+        ease: "easeInOut",
+        duration: 2.5,
+        repeat: Infinity,
+        repeatType: "reverse",
+      },
+      opacity: {
+        delay: i * 0.5,
+        duration: 1.5,
+        repeat: Infinity,
+        repeatType: "reverse",
+      },
+      fillOpacity: {
+        delay: 1 + i * 0.2,
+        duration: 3,
+        ease: "easeIn",
+        repeat: Infinity,
+        repeatType: "reverse",
+      },
+    },
+  }),
+};
+
+export default function AnimatedLogo() {
+  return (
+    <motion.svg
+      width="73"
+      height="85"
+      viewBox="0 0 73 85"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      initial="hidden"
+      animate="visible"
+    >
+      <motion.path
+        variants={draw}
+        custom={0}
+        d="M5.36038 3.05529C2.0852 5.66324 -0.0528164 9.71327 0.000992716 13.8996C0.16242 25.7304 0.402767 37.5613 0.600067 49.3921C0.750733 58.2885 4.43128 66.8908 10.5081 73.3874C11.9897 74.973 13.7008 76.5119 15.6738 77.9396C27.8095 86.7249 40.8421 84.7806 43.2169 84.3788C40.8672 82.4058 38.1588 79.744 35.6047 76.2464C35.4253 75.9989 35.2495 75.7514 35.0738 75.5075C30.2166 68.5733 27.2786 60.2938 27.1064 51.8279C26.8446 39.1074 26.9414 26.3869 26.676 13.6664C26.5899 9.55543 24.7639 5.62737 21.539 3.08041C18.9669 1.0536 15.7168 -0.0297605 12.3843 0.239285C9.78707 0.447347 7.35849 1.46255 5.35679 3.05529H5.36038Z"
+        stroke="#B9FD50"
+        strokeWidth="2"
+        fill="#B9FD50"
+      />
+      <motion.path
+        variants={draw}
+        custom={2}
+        d="M42.3955 56.8354C43.1381 56.2937 44.1569 55.4148 45.068 54.0947C45.6133 53.3019 45.9829 52.3656 46.277 51.6553C46.7362 50.5505 46.9945 48.8967 46.9945 47.7093C47.016 36.0363 46.9621 24.984 46.98 13.311C46.9872 9.00983 48.9746 4.89882 52.4793 2.40566C54.3734 1.05685 56.6047 0.213837 58.9759 0.0344737C61.6771 -0.166414 64.3173 0.518756 66.5773 1.87833C70.6883 4.34996 73.0631 8.91656 72.9985 13.7163C72.9304 18.778 72.0084 26.7919 67.4741 35.1862C63.747 42.0845 59.0153 46.5901 55.8263 49.1658C54.09 50.6007 51.9018 52.1863 49.2472 53.6893C46.754 55.0955 44.4151 56.1071 42.3955 56.8425V56.8354Z"
+        stroke="white"
+        strokeWidth="2"
+        fill="white"
+      />
+      <motion.path
+        variants={draw}
+        custom={1}
+        d="M30.418 59.3288C34.4716 59.6876 40.3762 59.7378 47.2172 58.1163C52.2107 56.9325 56.3037 55.1855 59.3996 53.5713C59.9986 53.2592 60.5618 52.8861 61.1179 52.5058C63.568 50.8306 66.6171 50.644 68.8699 52.018C68.9668 52.0754 69.0601 52.1364 69.1498 52.1973C71.1586 53.582 72.0411 56.1111 71.4779 58.4858C70.8788 61.0328 69.7524 64.3654 67.5678 67.845C64.6764 72.4511 61.1573 75.346 58.7323 76.9962C57.9718 77.5127 57.1324 77.893 56.2427 78.119C55.5289 78.3019 54.7074 78.4562 53.7962 78.5315C53.1182 78.5889 52.4797 78.5961 51.8914 78.571C50.3596 78.5028 48.8745 78.0652 47.54 77.3154C44.9859 75.8805 41.8829 73.7927 38.7907 70.7902C34.4823 66.6038 31.9031 62.3063 30.4216 59.3288H30.418Z"
+        stroke="#B9FD50"
+        strokeWidth="2"
+        fill="#B9FD50"
+      />
+      <motion.circle
+        initial={{ opacity: 0.5, fillOpacity: 0.5, fill: "#080716" }}
+        animate={{
+          opacity: 1,
+          fillOpacity: 1,
+          fill: ["#080716", "#080716", "#080716", "#FFFFFF"],
+        }}
+        transition={{
+          opacity: {
+            delay: 1.5,
+            duration: 1.5,
+            repeat: Infinity,
+            repeatType: "reverse",
+            repeatDelay: 1.5,
+          },
+          fillOpacity: {
+            delay: 1.5,
+            duration: 1.5,
+            ease: "anticipate",
+            repeatDelay: 1.5,
+            repeat: Infinity,
+            repeatType: "reverse",
+          },
+          fill: {
+            duration: 4, // Smooth color transition
+            ease: "linear",
+            repeat: Infinity, // Infinite loop
+          },
+        }}
+        cx="60.0865"
+        cy="10.2238"
+        r="5"
+      />
+    </motion.svg>
+  );
+}
