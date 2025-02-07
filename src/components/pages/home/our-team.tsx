@@ -1,7 +1,8 @@
-import { motion } from "framer-motion";
 import GradientHeading from "@/components/ui/gradient-heading";
 import GradientSubHeading from "@/components/ui/gradient-subHeading";
 import { cn } from "@/lib/utils";
+import { motion, useCycle } from "framer-motion";
+import { useEffect } from "react";
 
 const team = [
   {
@@ -25,24 +26,35 @@ const team = [
 ];
 
 export default function OurTeam() {
+  const [animatedIndex, cycleIndex] = useCycle(...team.map((_, i) => i));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      cycleIndex();
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [cycleIndex]);
+
+  const animationVariants = {
+    active: { y: [0, -25, 0], transition: { duration: 2, ease: "easeInOut" } },
+    inactive: { y: 0 },
+  };
+
   return (
-    <div className='centered-wrapper-custom-width max-w-[1300px] flex flex-col gap-10 relative'>
-      <div className='flex w-full flex-col place-self-center max-w-[1240px] pb-10 z-10'>
+    <div className="centered-wrapper-custom-width max-w-[1300px] flex flex-col gap-10 relative">
+      <div className="flex w-full flex-col place-self-center max-w-[1240px] pb-10 z-10">
         <GradientSubHeading>Our Team</GradientSubHeading>
         <GradientHeading>Together, We Build the Future</GradientHeading>
       </div>
-      <img
-        src='/pages/home/images/our-team.gif'
-        className='absolute left-1/2 translate-x-[-50%] z-0 top-[140px] object-contain h-[85%]'
-        alt='our team background gif'
-      />
-      <div className='grid grid-cols-3 gap-12 z-[1]'>
+      <div className="grid grid-cols-3 gap-12 z-[1]">
         {team.map((member, index) => (
-          <div
+          <motion.div
             key={index}
-            className='flex flex-col items-center max-w-[360px] w-full justify-end'
+            variants={animationVariants}
+            animate={animatedIndex === index ? "active" : "inactive"}
+            className="flex flex-col items-center max-w-[360px] w-full justify-end"
           >
-            <div className='relative flex items-end justify-center w-full overflow-hidden'>
+            <div className="relative flex items-end justify-center w-full overflow-hidden">
               <motion.img
                 initial={{
                   y: 100,
@@ -62,13 +74,13 @@ export default function OurTeam() {
                 className={cn("z-[2] object-contain", member.imageClassName)}
                 alt={`${member.name} image`}
               />
-              <div className='absolute h-[350px] left-0 right-0 bottom-0 bg-transparent border-[28px] border-b-0 border-white w-full' />
+              <div className="absolute h-[350px] left-0 right-0 bottom-0 bg-transparent border-[28px] border-b-0 border-white w-full" />
             </div>
-            <div className='text-center flex flex-col w-full bg-white p-5 font-dmSans text-black'>
-              <h4 className='text-[28px] font-bold'>{member.name}</h4>
-              <h5 className='text-[21px]'>{member.role}</h5>
+            <div className="text-center flex flex-col w-full bg-white p-5 font-dmSans text-black">
+              <h4 className="text-[28px] font-bold">{member.name}</h4>
+              <h5 className="text-[21px]">{member.role}</h5>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
