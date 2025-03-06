@@ -3,12 +3,12 @@ export default function HeroGradientSvg() {
     <>
       <img
         src='/pages/home/elements/left-side-gradient.svg'
-        className=' absolute top-0 left-0 -translate-x-[75%] z-0 blur-[70px] bottom-0'
+        className='absolute sm:top-0 top-4 left-0 -translate-x-[75%] z-0 md:blur-[70px] sm:blur-[50px] blur-[40px] bottom-0'
         alt=''
       />
       <img
         src='/pages/home/elements/right-side-gradient.svg'
-        className=' absolute top-0 right-0 translate-x-[75%] z-0 blur-[70px] bottom-0'
+        className='absolute sm:top-0 top-4 right-0 translate-x-[75%] z-0 md:blur-[70px] sm:blur-[50px] blur-[40px] bottom-0'
         alt=''
       />
     </>
