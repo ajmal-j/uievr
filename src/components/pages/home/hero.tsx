@@ -6,8 +6,8 @@ export default function Hero() {
   return (
     <div className='min-h-[max(950px,100dvh)] bg-[url("/pages/home/hero-bg-svg.svg")] bg-repeat bg-top flex flex-col gap-5 items-center justify-between h-full font-dmSans relative'>
       <HeroGradientSvg />
-      <Header className="opacity-0 static" />
-      <div className="flex flex-col justify-center items-center text-[132px] tracking-tight">
+      {/* <Header className="opacity-0 static" /> */}
+      {/* <div className="flex flex-col justify-center items-center text-[132px] tracking-tight">
         <h1 className="bg-gradient-to-b from-white via-white to-[#999999] bg-clip-text text-transparent text-center leading-none -mb-3">
           We build
         </h1>
@@ -17,8 +17,8 @@ export default function Hero() {
         <h1 className="bg-gradient-to-b from-white via-white to-[#999999] bg-clip-text text-transparent text-center leading-none -mt-6">
           apps & websites
         </h1>
-      </div>
-      <div className="w-full px-20 flex flex-col items-center justify-center pt-10 pb-5 gap-1 z-10">
+      </div> */}
+      {/* <div className="w-full px-20 flex flex-col items-center justify-center pt-10 pb-5 gap-1 z-10">
         <motion.button
           onClick={() => {
             document
@@ -111,7 +111,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

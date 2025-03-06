@@ -15,17 +15,17 @@ export default function Home() {
   return (
     <div className='overflow-hidden space-y-28 pb-20'>
       <Hero />
-      <OurClients />
-      <StepsToWorkWithUs />
-      <OurServices />
-      <EvrExplanation />
-      <OurWorks />
-      <OurTeam />
-      <ClientTestimonials />
-      <LetsWorkGradientText />
-      <Contact />
-      <InfiniteHorizontalMovingCards />
-      <Footer />
+      {/* <OurClients /> */}
+      {/* <StepsToWorkWithUs /> */}
+      {/* <OurServices /> */}
+      {/* <EvrExplanation /> */}
+      {/* <OurWorks /> */}
+      {/* <OurTeam /> */}
+      {/* <ClientTestimonials /> */}
+      {/* <LetsWorkGradientText /> */}
+      {/* <Contact /> */}
+      {/* <InfiniteHorizontalMovingCards /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
