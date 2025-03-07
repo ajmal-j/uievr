@@ -1,43 +1,53 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-const draw = {
-  hidden: { pathLength: 0, opacity: 0 },
-  visible: (i: number) => {
-    const delay = i * 0.5;
-    return {
-      pathLength: 1,
-      opacity: 1,
-      transition: {
-        pathLength: { delay, type: "spring", duration: 20, bounce: 0, ease : "linear" },
-        opacity: { delay, duration: 1 },
-      },
-    };
-  },
-};
-
 export default function SVGAnimation() {
   const ref = useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref, {
     once: true,
   });
 
+  const draw = {
+    hidden: { pathLength: 0, opacity: 0 },
+    visible: (i: number) => {
+      let delay = 0;
+      if (window.innerWidth >= 1024) {
+        delay = i * 0.5;
+      } else {
+        delay = i * 0.1;
+      }
+      return {
+        pathLength: 1,
+        opacity: 1,
+        transition: {
+          pathLength: {
+            delay,
+            type: "spring",
+            duration: window.innerWidth >= 1024 ? 20 : 10,
+            bounce: 0,
+            ease: "linear",
+          },
+          opacity: { delay, duration: 1 },
+        },
+      };
+    },
+  };
+
   return (
-    <div ref={ref} className='flex justify-center items-center min-h-screen'>
+    <div ref={ref} className='flex justify-center items-center'>
       <motion.svg
         width='1920'
-        height='1866'
         viewBox='0 0 1920 1866'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
         initial='hidden'
         animate='visible'
-        className='w-full h-auto'
+        className='w-full min-w-[1500px]'
       >
         <motion.path
           d='M0 16H807.001C892.421 16 961.667 85.2466 961.667 170.667V1696C961.667 1781.42 1030.91 1850.67 1116.33 1850.67H1920'
           stroke='url(#paint0_linear_112_72)'
-          strokeWidth='30.6667'
+          className={"lg:stroke-[30px] md:stroke-[20px] stroke-[15px]"}
           fill='transparent'
           strokeLinecap='round'
           variants={draw}
@@ -47,7 +57,7 @@ export default function SVGAnimation() {
         <motion.path
           d='M0 16H807.001C892.421 16 961.667 85.2466 961.667 170.667V334.667'
           stroke='url(#paint1_linear_112_72)'
-          strokeWidth='30.6667'
+          className={"lg:stroke-[30px] md:stroke-[20px] stroke-[15px]"}
           fill='transparent'
           strokeLinecap='round'
           variants={draw}
