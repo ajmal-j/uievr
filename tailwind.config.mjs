@@ -4,6 +4,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "2xl": "1700px",
+        xl2: "1620px",
+        xl1: "1500px",
+        lg2: "1200px",
+        lg1: "970px",
+        md2: "850px",
+        md1: "800px",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

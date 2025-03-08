@@ -18,7 +18,7 @@ export default function Home() {
       <OurClients />
       <StepsToWorkWithUs />
       <OurServices />
-      {/* <EvrExplanation /> */}
+      <EvrExplanation />
       {/* <OurWorks /> */}
       {/* <OurTeam /> */}
       {/* <ClientTestimonials /> */}
