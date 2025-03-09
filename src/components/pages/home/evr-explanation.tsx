@@ -164,7 +164,7 @@ export default function EvrExplanation() {
               ease: "easeInOut",
             },
           }}
-          className='2xl:text-[136px] xl2:text-[130px] xl1:text-[120px] lg2:text-[100px] lg1:text-[80px] md2:text-[70px] text-[min(180px,20vw)] font-samsungSansBold text-transparent bg-[url("/pages/home/elements/visualize-background.png")] bg-clip-text bg-center bg-cover'
+          className='2xl:text-[136px] xl2:text-[130px] xl1:text-[120px] lg2:text-[100px] lg1:text-[80px] md2:text-[70px] md:text-[58px] text-[min(180px,20vw)] font-samsungSansBold text-transparent bg-[url("/pages/home/elements/visualize-background.png")] bg-clip-text bg-center bg-cover'
         >
           visualize.
         </motion.h1>
