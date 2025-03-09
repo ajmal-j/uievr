@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { ReactLenis } from "lenis/react";
 import { useEffect, useRef } from "react";
-
+import "./App.css";
 import Header from "./components/layouts/header";
 import Home from "./pages/home";
 
