@@ -92,3 +92,7 @@ input::-webkit-inner-spin-button {
   background-color: #b9fd50;
   border-radius: 50px;
 }
+
+html {
+  background-color: #080716;
+}

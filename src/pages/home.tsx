@@ -19,7 +19,7 @@ export default function Home() {
       <StepsToWorkWithUs />
       <OurServices />
       <EvrExplanation />
-      {/* <OurWorks /> */}
+      <OurWorks />
       {/* <OurTeam /> */}
       {/* <ClientTestimonials /> */}
       {/* <LetsWorkGradientText /> */}

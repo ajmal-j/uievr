@@ -35,7 +35,7 @@ function App() {
       ref={lenisRef}
     >
       <div
-        className={`min-h-[3000px] bg-[#080716]  bg-[url("/pages/home/hero-bg-svg.svg")] bg-repeat bg-top bg-fixed`}
+        className={`min-h-[3000px] bg-[#080716] bg-[url("/pages/home/hero-bg-svg.svg")] bg-repeat bg-top bg-fixed`}
       >
         <Header />
         <Home />
