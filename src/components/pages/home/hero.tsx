@@ -33,6 +33,7 @@ export default function Hero() {
             whileInView={{
               height: "0%",
             }}
+            viewport={{ once: true }}
             className='absolute inset-0 bg-secondaryBackground'
           />
           We build
@@ -49,6 +50,7 @@ export default function Hero() {
             whileInView={{
               width: "0%",
             }}
+            viewport={{ once: true }}
             className='absolute inset-0 bg-secondaryBackground ms-auto'
           />
           stunning
@@ -65,6 +67,7 @@ export default function Hero() {
             whileInView={{
               width: "0%",
             }}
+            viewport={{ once: true }}
             className='absolute inset-0 bg-secondaryBackground'
           />
           apps & websites
