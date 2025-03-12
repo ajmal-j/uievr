@@ -20,7 +20,7 @@ export default function Home() {
       <OurServices />
       <EvrExplanation />
       <OurWorks />
-      {/* <OurTeam /> */}
+      <OurTeam />
       {/* <ClientTestimonials /> */}
       {/* <LetsWorkGradientText /> */}
       {/* <Contact /> */}

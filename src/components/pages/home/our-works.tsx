@@ -123,7 +123,7 @@ export default function OurWorks() {
             <ParallaxImage
               setIndex={setIndex}
               activeIndex={activeIndex}
-              speed={-20}
+              speed={-15}
               index={6}
               path='/pages/home/images/works-parallax/4.png'
             />
@@ -151,7 +151,7 @@ export default function OurWorks() {
             <ParallaxImage
               setIndex={setIndex}
               activeIndex={activeIndex}
-              speed={-25}
+              speed={-15}
               index={10}
               path='/pages/home/images/works-parallax/4.png'
             />
