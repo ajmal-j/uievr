@@ -21,7 +21,7 @@ export default function Home() {
       <EvrExplanation />
       <OurWorks />
       <OurTeam />
-      {/* <ClientTestimonials /> */}
+      <ClientTestimonials />
       {/* <LetsWorkGradientText /> */}
       {/* <Contact /> */}
       {/* <InfiniteHorizontalMovingCards /> */}
