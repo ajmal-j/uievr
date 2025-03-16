@@ -9,20 +9,22 @@ import OurClients from "@/components/pages/home/our-clients";
 import OurServices from "@/components/pages/home/our-services";
 import OurTeam from "@/components/pages/home/our-team";
 import OurWorks from "@/components/pages/home/our-works";
+import Pricing from "@/components/pages/home/pricing";
 import StepsToWorkWithUs from "@/components/pages/home/steps-to-work-with-us";
 
 export default function Home() {
   return (
-    <div className='overflow-hidden 2xl:space-y-28 xl:space-y-24 lg:space-y-20 md:space-y-16 sm:space-y-14 space-y-6 pb-20'>
+    <div className="overflow-hidden 2xl:space-y-28 xl:space-y-24 lg:space-y-20 md:space-y-16 sm:space-y-14 space-y-6 pb-20">
       <Hero />
       <OurClients />
       <StepsToWorkWithUs />
       <OurServices />
       <EvrExplanation />
       <OurWorks />
+      <Pricing />
       <OurTeam />
       <ClientTestimonials />
-      {/* <LetsWorkGradientText /> */}
+      <LetsWorkGradientText />
       {/* <Contact /> */}
       {/* <InfiniteHorizontalMovingCards /> */}
       {/* <Footer /> */}
