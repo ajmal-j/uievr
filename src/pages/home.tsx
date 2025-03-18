@@ -25,7 +25,7 @@ export default function Home() {
       <OurTeam />
       <ClientTestimonials />
       <LetsWorkGradientText />
-      {/* <Contact /> */}
+      <Contact />
       {/* <InfiniteHorizontalMovingCards /> */}
       {/* <Footer /> */}
     </div>
