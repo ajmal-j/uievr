@@ -68,7 +68,10 @@ export default function Contact() {
   }
 
   return (
-    <div className='centered-wrapper flex flex-col xl:gap-16 lg:gap-15 md:gap-14 sm:gap-12 gap-10 font-dmSans'>
+    <div
+      id='contact'
+      className='centered-wrapper flex flex-col xl:gap-16 lg:gap-15 md:gap-14 sm:gap-12 gap-10 font-dmSans'
+    >
       <div className='flex lg:flex-row flex-col xl:gap-20 lg:gap-14 md:gap-10 sm:gap-7 gap-5 items-start justify-stretch'>
         <div className='lg:flex-1 md:flex-[1.4] lg:min-w-[400px] text-[#797C86]'>
           <div className='flex flex-col xl:gap-7 lg:gap-6 md:gap-5 sm:gap-4 gap-3'>
