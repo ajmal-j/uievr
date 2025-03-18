@@ -78,13 +78,13 @@ export default function ClientTestimonials() {
                   },
                 }}
                 viewport={{ once: true }}
-                className='absolute -top-[2px] -left-1 -right-4 -bottom-3 bg-secondaryBackground/15 border-[1px] border-secondaryBackground'
+                className='absolute -top-[2px] -left-1 -right-4 -bottom-3 bg-[#B9FD50]/15 border-[1px] border-[#B9FD50]'
               >
                 <div className='w-full h-full relative'>
-                  <div className='lg:w-[13px] sm:w-[11px] w-[8px] lg:h-[11px] sm:h-[8px] h-[6px] absolute top-0 left-0 bg-secondaryBackground -translate-x-1/2 -translate-y-1/2' />
-                  <div className='lg:w-[13px] sm:w-[11px] w-[8px] lg:h-[11px] sm:h-[8px] h-[6px] absolute top-0 right-0 bg-secondaryBackground translate-x-1/2 -translate-y-1/2' />
-                  <div className='lg:w-[13px] sm:w-[11px] w-[8px] lg:h-[11px] sm:h-[8px] h-[6px] absolute bottom-0 left-0 bg-secondaryBackground -translate-x-1/2 translate-y-1/2' />
-                  <div className='lg:w-[13px] sm:w-[11px] w-[8px] lg:h-[11px] sm:h-[8px] h-[6px] absolute bottom-0 right-0 bg-secondaryBackground translate-x-1/2 translate-y-1/2' />
+                  <div className='lg:w-[13px] sm:w-[11px] w-[8px] lg:h-[11px] sm:h-[8px] h-[6px] absolute top-0 left-0 bg-[#B9FD50] -translate-x-1/2 -translate-y-1/2' />
+                  <div className='lg:w-[13px] sm:w-[11px] w-[8px] lg:h-[11px] sm:h-[8px] h-[6px] absolute top-0 right-0 bg-[#B9FD50] translate-x-1/2 -translate-y-1/2' />
+                  <div className='lg:w-[13px] sm:w-[11px] w-[8px] lg:h-[11px] sm:h-[8px] h-[6px] absolute bottom-0 left-0 bg-[#B9FD50] -translate-x-1/2 translate-y-1/2' />
+                  <div className='lg:w-[13px] sm:w-[11px] w-[8px] lg:h-[11px] sm:h-[8px] h-[6px] absolute bottom-0 right-0 bg-[#B9FD50] translate-x-1/2 translate-y-1/2' />
                   <motion.svg
                     animate={{
                       opacity: [0.6, 1, 0, 0, 1, 0.6],

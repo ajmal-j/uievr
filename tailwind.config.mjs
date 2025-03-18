@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       screens: {
@@ -27,8 +31,6 @@ export default {
       },
       colors: {
         background: "hsl(var(--background))",
-        primaryBackground: "#080716",
-        secondaryBackground: "#B9FD50",
         foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -71,5 +73,46 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addComponents }) {
+      addComponents({
+        ".centered-wrapper": {
+          maxWidth: "1600px",
+          margin: "0 auto",
+          paddingLeft: "1.75rem", // lg:px-7 (28px)
+          paddingRight: "1.75rem", // lg:px-7 (28px)
+          paddingTop: "4rem", // lg:py-16 (64px)
+          paddingBottom: "4rem", // lg:py-16 (64px)
+          "@screen xl": {
+            paddingTop: "3rem", // xl:py-12 (48px)
+            paddingBottom: "3rem", // xl:py-12 (48px)
+          },
+          "@screen px": {
+            paddingLeft: "1.25rem", // px-5 (20px)
+            paddingRight: "1.25rem",
+          },
+        },
+        ".centered-wrapper-custom-padding": {
+          maxWidth: "1600px",
+          margin: "0 auto",
+        },
+        ".centered-wrapper-custom-width": {
+          margin: "0 auto",
+          paddingLeft: "1.75rem", // lg:px-7 (28px)
+          paddingRight: "1.75rem",
+          paddingTop: "4rem", // lg:py-16 (64px)
+          paddingBottom: "4rem",
+          "@screen xl": {
+            paddingTop: "3rem", // xl:py-12 (48px)
+            paddingBottom: "3rem",
+          },
+          "@screen px": {
+            paddingLeft: "1.25rem", // px-5 (20px)
+            paddingRight: "1.25rem",
+          },
+        },
+      });
+    },
+  ],
 };

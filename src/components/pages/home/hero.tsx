@@ -34,7 +34,7 @@ export default function Hero() {
               height: "0%",
             }}
             viewport={{ once: true }}
-            className='absolute inset-0 bg-secondaryBackground'
+            className='absolute inset-0 bg-[#B9FD50]'
           />
           We build
         </h1>
@@ -51,7 +51,7 @@ export default function Hero() {
               width: "0%",
             }}
             viewport={{ once: true }}
-            className='absolute inset-0 bg-secondaryBackground ms-auto'
+            className='absolute inset-0 bg-[#B9FD50] ms-auto'
           />
           stunning
         </h1>
@@ -68,7 +68,7 @@ export default function Hero() {
               width: "0%",
             }}
             viewport={{ once: true }}
-            className='absolute inset-0 bg-secondaryBackground'
+            className='absolute inset-0 bg-[#B9FD50]'
           />
           apps & websites
         </h1>
@@ -153,7 +153,7 @@ export default function Hero() {
           </div>
           <div className="flex-1 flex justify-end items-center'">
             <div className='bg-gradient-to-br from-[#2CCA5D]/40 via-white/10 to-transparent p-[2px] rounded-full'>
-              <button className='relative flex items-center justify-center md:gap-5 sm:gap-3 gap-1.5 rounded-full md:px-7 sm:px-6 px-5 md:py-5 sm:py-4 py-3 bg-gradient-to-b from-[#21202E] to-primaryBackground overflow-hidden'>
+              <button className='relative flex items-center justify-center md:gap-5 sm:gap-3 gap-1.5 rounded-full md:px-7 sm:px-6 px-5 md:py-5 sm:py-4 py-3 bg-gradient-to-b from-[#21202E] to-[#080716] overflow-hidden'>
                 <img
                   src='/pages/home/icons/whatsapp-icon.svg'
                   className='md:w-[33px] sm:w-[27px] w-[18px] object-contain'

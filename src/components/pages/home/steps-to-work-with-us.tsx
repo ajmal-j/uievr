@@ -86,12 +86,12 @@ export default function StepsToWorkWithUs() {
               scale: isInView ? 1 : 0,
               transition: { delay: 1.8, duration: 0.2 },
             }}
-            className='xl:size-[113px] lg:size-[90px] md:size-[70px] sm:size-[50px] size-[40px] xl:border-[7px] lg:border-[5px] md:border-[3px] sm:border-[2px] border-[1px] border-[#0E0E0E] bg-secondaryBackground rounded-full shadow-[0px_0px_48px_0px_#0E0E0E] grid place-content-center relative shrink-0'
+            className='xl:size-[113px] lg:size-[90px] md:size-[70px] sm:size-[50px] size-[40px] xl:border-[7px] lg:border-[5px] md:border-[3px] sm:border-[2px] border-[1px] border-[#0E0E0E] bg-[#B9FD50] rounded-full shadow-[0px_0px_48px_0px_#0E0E0E] grid place-content-center relative shrink-0'
           >
             <span className='inline-block text-[#0E0E0E] xl:text-[42.5px] lg:text-[35px] md:text-[27px] sm:text-[20px] text-[14px] font-dmSans font-semibold tracking-tight z-[1]'>
               01
             </span>
-            <div className='xl:size-[50px] lg:size-[40px] md:size-[30px] sm:size-[15px] size-[10px] bg-secondaryBackground absolute md:rounded-sm sm:rounded-xs rounded-[2px] top-1/2 -translate-y-1/2 -right-[3px] rotate-45' />
+            <div className='xl:size-[50px] lg:size-[40px] md:size-[30px] sm:size-[15px] size-[10px] bg-[#B9FD50] absolute md:rounded-sm sm:rounded-xs rounded-[2px] top-1/2 -translate-y-1/2 -right-[3px] rotate-45' />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
@@ -177,12 +177,12 @@ export default function StepsToWorkWithUs() {
               scale: isInView ? 1 : 0,
               transition: { delay: 2.3, duration: 0.2 },
             }}
-            className='xl:size-[113px] lg:size-[90px] md:size-[70px] sm:size-[50px] size-[40px] xl:border-[7px] lg:border-[5px] md:border-[3px] sm:border-[2px] border-[1px] border-[#0E0E0E] bg-secondaryBackground rounded-full shadow-[0px_0px_48px_0px_#0E0E0E] grid place-content-center relative shrink-0'
+            className='xl:size-[113px] lg:size-[90px] md:size-[70px] sm:size-[50px] size-[40px] xl:border-[7px] lg:border-[5px] md:border-[3px] sm:border-[2px] border-[1px] border-[#0E0E0E] bg-[#B9FD50] rounded-full shadow-[0px_0px_48px_0px_#0E0E0E] grid place-content-center relative shrink-0'
           >
             <span className='inline-block text-[#0E0E0E] xl:text-[42.5px] lg:text-[35px] md:text-[27px] sm:text-[20px] text-[14px] font-dmSans font-semibold tracking-tight z-[1]'>
               02
             </span>
-            <div className='xl:size-[50px] lg:size-[40px] md:size-[30px] sm:size-[15px] size-[10px] bg-secondaryBackground absolute md:rounded-sm sm:rounded-xs rounded-[2px] top-1/2 -translate-y-1/2 -left-[3px] rotate-45' />
+            <div className='xl:size-[50px] lg:size-[40px] md:size-[30px] sm:size-[15px] size-[10px] bg-[#B9FD50] absolute md:rounded-sm sm:rounded-xs rounded-[2px] top-1/2 -translate-y-1/2 -left-[3px] rotate-45' />
           </motion.div>
           <div className='flex-1'></div>
         </div>
@@ -195,12 +195,12 @@ export default function StepsToWorkWithUs() {
               scale: isInView ? 1 : 0,
               transition: { delay: 2.9, duration: 0.2 },
             }}
-            className='xl:size-[113px] lg:size-[90px] md:size-[70px] sm:size-[50px] size-[40px] xl:border-[7px] lg:border-[5px] md:border-[3px] sm:border-[2px] border-[1px] border-[#0E0E0E] bg-secondaryBackground rounded-full shadow-[0px_0px_48px_0px_#0E0E0E] grid place-content-center relative shrink-0'
+            className='xl:size-[113px] lg:size-[90px] md:size-[70px] sm:size-[50px] size-[40px] xl:border-[7px] lg:border-[5px] md:border-[3px] sm:border-[2px] border-[1px] border-[#0E0E0E] bg-[#B9FD50] rounded-full shadow-[0px_0px_48px_0px_#0E0E0E] grid place-content-center relative shrink-0'
           >
             <span className='inline-block text-[#0E0E0E] xl:text-[42.5px] lg:text-[35px] md:text-[27px] sm:text-[20px] text-[14px] font-dmSans font-semibold tracking-tight z-[1]'>
               03
             </span>
-            <div className='xl:size-[50px] lg:size-[40px] md:size-[30px] sm:size-[15px] size-[10px] bg-secondaryBackground absolute md:rounded-sm sm:rounded-xs rounded-[2px] top-1/2 -translate-y-1/2 -right-[3px] rotate-45' />
+            <div className='xl:size-[50px] lg:size-[40px] md:size-[30px] sm:size-[15px] size-[10px] bg-[#B9FD50] absolute md:rounded-sm sm:rounded-xs rounded-[2px] top-1/2 -translate-y-1/2 -right-[3px] rotate-45' />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}

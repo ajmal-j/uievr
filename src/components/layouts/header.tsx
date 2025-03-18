@@ -31,16 +31,16 @@ export default function Header({ className }: { className?: string }) {
       </div>
       <div className='flex-1 flex items-center'>
         <div className='w-full flex items-center justify-end xl:gap-10 lg:gap-7 h-[50px]'>
-          <button className='relative text-start xl:ps-6 lg:ps-7 text-white lg:border lg:border-secondaryBackground xl:w-[143px] lg:w-[133px] flex items-center rounded-[30px] h-full'>
+          <button className='relative text-start xl:ps-6 lg:ps-7 text-white lg:border lg:border-[#B9FD50] xl:w-[143px] lg:w-[133px] flex items-center rounded-[30px] h-full'>
             <span className='xl:text-[17px] lg:text-[15px] lg:inline-block hidden'>
               Menu
             </span>
-            <div className='aspect-square bg-secondaryBackground grid place-content-center rounded-full lg:size-[50px] size-[40px] absolute right-0'>
+            <div className='aspect-square bg-[#B9FD50] grid place-content-center rounded-full lg:size-[50px] size-[40px] absolute right-0'>
               <Menu className='xl:h-6 lg:h-5 h-4 text-black' />
             </div>
           </button>
           <div className='h-[45px] bg-[#9000FF] w-[1.3px] shrink-0 place-items-start lg:block hidden' />
-          <button className='xl:text-[17px] lg:text-[15px] text-black bg-secondaryBackground rounded-[30px] h-full shrink-0 py-2 xl:px-7 lg:px-5 lg:block hidden'>
+          <button className='xl:text-[17px] lg:text-[15px] text-black bg-[#B9FD50] rounded-[30px] h-full shrink-0 py-2 xl:px-7 lg:px-5 lg:block hidden'>
             Contact Us
           </button>
         </div>

@@ -58,7 +58,7 @@ export default function Pricing() {
             key={index}
             className='flex flex-col md:gap-7 sm:gap-5 gap-4 items-start max-w-[500px] bg-white xl:p-[40px] lg:p-[36px] md:p-[32px] sm:p-[27px] p-[25px] md:rounded-3xl sm:rounded-3xl rounded-2xl w-full'
           >
-            <div className='aspect-square xl:p-4 lg:p-3 md:p-2 sm:p-1 p-[10px] bg-secondaryBackground grid place-content-center rounded-xl'>
+            <div className='aspect-square xl:p-4 lg:p-3 md:p-2 sm:p-1 p-[10px] bg-[#B9FD50] grid place-content-center rounded-xl'>
               <img
                 src='/pages/home/pricing/elements/card-top-icon.svg'
                 className='xl:w-[24px] lg:w-[20px] md:w-[16px] sm:w-[14px] w-[12px]'
