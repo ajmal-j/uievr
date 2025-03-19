@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import GradientHeading from "@/components/ui/gradient-heading";
 import GradientSubHeading from "@/components/ui/gradient-subHeading";
 

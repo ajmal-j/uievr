@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import GradientHeading from "@/components/ui/gradient-heading";
@@ -62,7 +63,7 @@ export default function ClientTestimonials() {
       <div className='w-full flex items-center justify-center'>
         <div className='flex lg:items-start items-center justify-center flex-col centered-wrapper-custom-width max-w-[780px] xl:gap-10 lg:gap-8 md:gap-6 sm:gap-4 gap-3'>
           <GradientHeading className='text-center text-[min(110px,12vw)] leading-[0.9]'>
-            What our clients <br /> say's{" "}
+            What our clients <br /> say&apos;s{" "}
             <div className='inline-block relative'>
               <motion.div
                 animate={{

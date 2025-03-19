@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useEffect, useRef, useState } from "react";
 import SVGAnimation from "./svg-animation";
 import { motion, useInView } from "framer-motion";

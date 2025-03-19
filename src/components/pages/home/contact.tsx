@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import {
   Form,
   FormControl,
@@ -148,7 +149,7 @@ export default function Contact() {
             </h3>
             <p className="xl:text-[19.5px] lg:text-[16px] md:text-[14px] sm:text-[12px] lg:max-w-none text-[10px] m45-w-[">
               Have a specific inquiry or message for us? Please use the contact
-              form below, and we'll get back to you promptly.
+              form below, and we&apos;ll get back to you promptly.
             </p>
           </div>
         </div>

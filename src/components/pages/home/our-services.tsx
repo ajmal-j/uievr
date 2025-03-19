@@ -26,7 +26,7 @@ export default function OurServices() {
       <div className='inline-flex flex-col place-self-start max-w-[1100px]'>
         <GradientSubHeading>Our Service</GradientSubHeading>
         <GradientHeading>
-          It's not about what we make, it's about how satisfied you are with our
+          It&apos;s not about what we make, it&apos;s about how satisfied you are with our
           service
         </GradientHeading>
       </div>

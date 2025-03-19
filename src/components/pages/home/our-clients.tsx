@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import GradientHeading from "@/components/ui/gradient-heading";
 import GradientSubHeading from "@/components/ui/gradient-subHeading";
 import { motion } from "framer-motion";
@@ -7,7 +8,7 @@ export default function OurClients() {
     <div className='centered-wrapper-custom-padding flex flex-col xl:gap-14 lg:gap-10 md:gap-8 sm:gap-6 gap-4 lg:py-16 xl:py-12 py-8'>
       <div className='inline-flex flex-col md:place-self-center place-self-start lg:px-7 px-5'>
         <GradientSubHeading>Our Tools</GradientSubHeading>
-        <GradientHeading>Technology we're using.</GradientHeading>
+        <GradientHeading>Technology we&apos;re using.</GradientHeading>
       </div>
       <ImageScroll />
     </div>

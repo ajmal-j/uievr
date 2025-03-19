@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
 
 export default function InfiniteHorizontalMovingCards() {
@@ -38,7 +39,7 @@ function Card() {
             />
           </div>
           <span className='text-white/25 font-urbanist xl:text-[66px] lg:text-[55px] md:text-[45px] sm:text-[35px] text-[25px] font-medium inline-block'>
-            Let's build your project
+            Let&apos;s build your project
           </span>
         </div>
       ))}
