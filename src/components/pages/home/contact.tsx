@@ -69,81 +69,81 @@ export default function Contact() {
 
   return (
     <div
-      id='contact'
-      className='centered-wrapper flex flex-col xl:gap-16 lg:gap-15 md:gap-14 sm:gap-12 gap-10 font-dmSans'
+      id="contact"
+      className="centered-wrapper flex flex-col xl:gap-16 lg:gap-15 md:gap-14 sm:gap-12 gap-10 font-dmSans"
     >
-      <div className='flex lg:flex-row flex-col xl:gap-20 lg:gap-14 md:gap-10 sm:gap-7 gap-5 items-start justify-stretch'>
-        <div className='lg:flex-1 md:flex-[1.4] lg:min-w-[400px] text-[#797C86]'>
-          <div className='flex flex-col xl:gap-7 lg:gap-6 md:gap-5 sm:gap-4 gap-3'>
-            <h3 className='font-semibold uppercase 2xl:text-[40px] xl:text-[35px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-[16px] leading-none'>
+      <div className="flex lg:flex-row flex-col xl:gap-20 lg:gap-14 md:gap-10 sm:gap-7 gap-5 items-start justify-stretch">
+        <div className="lg:flex-1 md:flex-[1.4] lg:min-w-[400px] text-[#797C86]">
+          <div className="flex flex-col xl:gap-7 lg:gap-6 md:gap-5 sm:gap-4 gap-3">
+            <h3 className="font-semibold uppercase 2xl:text-[40px] xl:text-[35px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-[16px] leading-none">
               Contact Information
             </h3>
-            <p className='xl:text-[19.5px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-[10px] lg:max-w-none max-w-[450px]'>
+            <p className="xl:text-[19.5px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-[10px] lg:max-w-none max-w-[450px]">
               Feel free to reach out to us through various channels. We are
               available by phone, email, and social media for your convenience.
             </p>
           </div>
         </div>
-        <div className='lg:flex-[2] flex sm:flex-row flex-col sm:items-center items-start justify-start 2xl:gap-12 xl:gap-10 lg:gap-8 md:gap-6 sm:gap-5 gap-4'>
+        <div className="lg:flex-[2] flex sm:flex-row flex-col sm:items-center items-start justify-start 2xl:gap-12 xl:gap-10 lg:gap-8 md:gap-6 sm:gap-5 gap-4">
           <a
-            href='tel:+1-123-456-7890'
-            target='_blank'
-            className='inline-flex items-center gap-3 border-b border-b-[#2F2F37] pb-1'
+            href="tel:+1-123-456-7890"
+            target="_blank"
+            className="inline-flex items-center gap-3 border-b border-b-[#2F2F37] pb-1"
           >
-            <span className='text-[#F2F2F3] xl:text-[19.5px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-[10px] font-medium'>
+            <span className="text-[#F2F2F3] xl:text-[19.5px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-[10px] font-medium">
               +1-123-456-7890
             </span>
             <img
-              src='/pages/home/icons/arrow-top-right.svg'
-              className='xl:w-[20px] lg:w-[16px] md:w-[14px] sm:w-[12px] w-[10px] object-contain md:mt-1 mt-0.5'
-              alt='Arrow top right'
+              src="/pages/home/icons/arrow-top-right.svg"
+              className="xl:w-[20px] lg:w-[16px] md:w-[14px] sm:w-[12px] w-[10px] object-contain md:mt-1 mt-0.5"
+              alt="Arrow top right"
             />
           </a>
           <a
-            href='mailto:info@damienbraunphotography.com'
-            target='_blank'
-            className='inline-flex items-center gap-3 border-b border-b-[#2F2F37] pb-1'
+            href="mailto:info@damienbraunphotography.com"
+            target="_blank"
+            className="inline-flex items-center gap-3 border-b border-b-[#2F2F37] pb-1"
           >
-            <span className='text-[#F2F2F3] xl:text-[19.5px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-[10px] font-medium'>
+            <span className="text-[#F2F2F3] xl:text-[19.5px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-[10px] font-medium">
               info@damien braunphotography.com
             </span>
             <img
-              src='/pages/home/icons/arrow-top-right.svg'
-              className='xl:w-[20px] lg:w-[16px] md:w-[14px] sm:w-[12px] w-[10px] object-contain md:mt-1 mt-0.5'
-              alt='Arrow top right'
+              src="/pages/home/icons/arrow-top-right.svg"
+              className="xl:w-[20px] lg:w-[16px] md:w-[14px] sm:w-[12px] w-[10px] object-contain md:mt-1 mt-0.5"
+              alt="Arrow top right"
             />
           </a>
         </div>
       </div>
 
-      <div className='flex md:flex-row flex-col xl:gap-20 lg:gap-14 md:gap-10 sm:gap-7 gap-5 items-start justify-stretch'>
-        <div className='lg:flex-1 md:flex-[1.4] lg:min-w-[400px] text-[#797C86]'>
-          <div className='flex flex-col xl:gap-7 lg:gap-6 md:gap-5 sm:gap-4 gap-3'>
-            <h3 className='font-semibold uppercase 2xl:text-[40px] xl:text-[35px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-[16px] leading-none'>
+      <div className="flex md:flex-row flex-col xl:gap-20 lg:gap-14 md:gap-10 sm:gap-7 gap-5 items-start justify-stretch">
+        <div className="lg:flex-1 md:flex-[1.4] lg:min-w-[400px] text-[#797C86]">
+          <div className="flex flex-col xl:gap-7 lg:gap-6 md:gap-5 sm:gap-4 gap-3">
+            <h3 className="font-semibold uppercase 2xl:text-[40px] xl:text-[35px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-[16px] leading-none">
               Send Me a Message
             </h3>
-            <p className='xl:text-[19.5px] lg:text-[16px] md:text-[14px] sm:text-[12px] lg:max-w-none text-[10px] m45-w-['>
+            <p className="xl:text-[19.5px] lg:text-[16px] md:text-[14px] sm:text-[12px] lg:max-w-none text-[10px] m45-w-[">
               Have a specific inquiry or message for us? Please use the contact
               form below, and we'll get back to you promptly.
             </p>
           </div>
         </div>
-        <div className='md:flex-[2]'>
+        <div className="md:flex-[2]">
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className='grid grid-cols-2 xl:gap-x-16 lg:gap-x-14 md:gap-x-10 sm:gap-x-7 gap-x-5 xl:gap-y-12 lg:gap-y-10 md:gap-y-8 sm:gap-y-6 gap-y-4'
+              className="grid grid-cols-2 xl:gap-x-16 lg:gap-x-14 md:gap-x-10 sm:gap-x-7 gap-x-5 xl:gap-y-12 lg:gap-y-10 md:gap-y-8 sm:gap-y-6 gap-y-4"
             >
               <FormField
                 control={form.control}
-                name='firstName'
+                name="firstName"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className='xl:text-[20px] lg:text-[18px] md:text-[16px] sm:text-[14px] text-[12px]'>
+                    <FormLabel className="xl:text-[20px] lg:text-[18px] md:text-[16px] sm:text-[14px] text-[12px]">
                       First Name
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder='First Name' {...field} />
+                      <Input placeholder="First Name" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -152,14 +152,14 @@ export default function Contact() {
 
               <FormField
                 control={form.control}
-                name='lastName'
+                name="lastName"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className='xl:text-[20px] lg:text-[18px] md:text-[16px] sm:text-[14px] text-[12px]'>
+                    <FormLabel className="xl:text-[20px] lg:text-[18px] md:text-[16px] sm:text-[14px] text-[12px]">
                       Last Name
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder='Last Name' {...field} />
+                      <Input placeholder="Last Name" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -168,14 +168,14 @@ export default function Contact() {
 
               <FormField
                 control={form.control}
-                name='email'
+                name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className='xl:text-[20px] lg:text-[18px] md:text-[16px] sm:text-[14px] text-[12px]'>
+                    <FormLabel className="xl:text-[20px] lg:text-[18px] md:text-[16px] sm:text-[14px] text-[12px]">
                       Email
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder='Email Address' {...field} />
+                      <Input placeholder="Email Address" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -184,14 +184,14 @@ export default function Contact() {
 
               <FormField
                 control={form.control}
-                name='phone'
+                name="phone"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className='xl:text-[20px] lg:text-[18px] md:text-[16px] sm:text-[14px] text-[12px]'>
+                    <FormLabel className="xl:text-[20px] lg:text-[18px] md:text-[16px] sm:text-[14px] text-[12px]">
                       Phone Number
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder='Phone Number' {...field} />
+                      <Input placeholder="Phone Number" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -200,30 +200,30 @@ export default function Contact() {
 
               <FormField
                 control={form.control}
-                name='message'
+                name="message"
                 render={({ field }) => (
-                  <FormItem className='col-span-2'>
-                    <FormLabel className='xl:text-[20px] lg:text-[18px] md:text-[16px] sm:text-[14px] text-[12px]'>
+                  <FormItem className="col-span-2">
+                    <FormLabel className="xl:text-[20px] lg:text-[18px] md:text-[16px] sm:text-[14px] text-[12px]">
                       Your Message
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder='Message' {...field} />
+                      <Input placeholder="Message" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
 
-              <div className='col-span-2 flex items-center justify-end'>
-                <button className='flex items-center sm:gap-2 gap-2 border-b border-b-[#1C1C21] pb-1'>
-                  <span className='xl:text-[46px] lg:text-[40px] md:text-[34px] sm:text-[28px] text-[22px] font-semibold text-white uppercase text-nowrap'>
+              <div className="col-span-2 flex items-center justify-end">
+                <button className="flex items-center sm:gap-2 gap-2 border-b border-b-[#1C1C21] pb-1 cursor-pointer">
+                  <span className="xl:text-[46px] lg:text-[40px] md:text-[34px] sm:text-[28px] text-[22px] font-semibold text-white uppercase text-nowrap">
                     send message
                   </span>
-                  <span className='bg-[#4A2CED] xl:px-9 lg:px-8 md:px-7 sm:px-6 px-5 md:py-4 sm:py-3 py-2 rounded-full shadow-inner shadow-white/30 w-full grid place-content-center'>
+                  <span className="bg-[#4A2CED] xl:px-9 lg:px-8 md:px-7 sm:px-6 px-5 md:py-4 sm:py-3 py-2 rounded-full shadow-inner shadow-white/30 w-full grid place-content-center">
                     <img
-                      src='/pages/home/icons/arrow-top-right.svg'
-                      className='xl:w-[20px] lg:w-[16px] md:w-[14px] sm:w-[12px] w-[10px] object-contain mt-[2px]'
-                      alt='Arrow top right'
+                      src="/pages/home/icons/arrow-top-right.svg"
+                      className="xl:w-[20px] lg:w-[16px] md:w-[14px] sm:w-[12px] w-[10px] object-contain mt-[2px]"
+                      alt="Arrow top right"
                     />
                   </span>
                 </button>

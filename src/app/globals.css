@@ -7,8 +7,11 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-dmSans);
-  --font-mono: var(--font-samsungSansMedium);
+  --font-dmSans: "DM Sans", "sans-serif";
+  --font-outfit: "Outfit", "sans-serif";
+  --font-urbanist: "Urbanist", "sans-serif";
+  --font-samsungSansBold: "Samsung Sharp Sans Bold", "sans-serif";
+  --font--samsungSansMedium: "Samsung Sharp Sans Medium", "sans-serif";
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -118,6 +121,20 @@
   --background: hsl(var(--background));
 }
 
+@layer utilities {
+  .centered-wrapper {
+    @apply max-w-[1600px] mx-auto lg:px-6 px-5 lg:py-16 xl:py-12 py-8;
+  }
+
+  .centered-wrapper-custom-padding {
+    @apply max-w-[1600px] mx-auto;
+  }
+
+  .centered-wrapper-custom-width {
+    @apply mx-auto lg:px-6 px-5 lg:py-16 xl:py-12 py-8;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -126,6 +143,7 @@
     @apply bg-background text-foreground;
   }
 }
-body {
-  font-family: var(--font-dmSans), sans-serif;
+
+.gradient-bg {
+  will-change: transform;
 }
