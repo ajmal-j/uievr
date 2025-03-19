@@ -11,6 +11,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import validator from "validator";
 import { z } from "zod";
+import { Resend } from "resend";
 
 const formSchema = z.object({
   firstName: z
@@ -63,8 +64,31 @@ export default function Contact() {
   });
 
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    const apiKey =
+      process.env.NEXT_PUBLIC_RESEND_API_KEY ??
+      "re_S1B8v4oL_PcE6kBaBeKozmVnKxECYLCVr";
+
+    if (!apiKey) {
+      alert("Resend API key not found");
+    }
+
+    const resend = new Resend(apiKey);
+
+    const { data, error } = await resend.emails.send({
+      from: "Acme <onboarding@resend.dev>",
+      to: ["delivered@resend.dev"],
+      subject: "Hello world",
+      react: EmailTemplate(values),
+    });
+
+    if (error) {
+      alert(error);
+    }
+
+    if (data) {
+      alert("Email sent successfully");
+    }
   }
 
   return (
@@ -232,6 +256,24 @@ export default function Contact() {
           </Form>
         </div>
       </div>
+    </div>
+  );
+}
+
+function EmailTemplate({
+  email,
+  firstName,
+  lastName,
+  message,
+  phone,
+}: z.infer<typeof formSchema>) {
+  return (
+    <div>
+      <p>First Name: {firstName}</p>
+      <p>Last Name: {lastName}</p>
+      <p>Email: {email}</p>
+      <p>Phone: {phone}</p>
+      <p>Message: {message}</p>
     </div>
   );
 }
