@@ -107,12 +107,12 @@ export default function Contact() {
         </div>
         <div className="lg:flex-[2] flex sm:flex-row flex-col sm:items-center items-start justify-start 2xl:gap-12 xl:gap-10 lg:gap-8 md:gap-6 sm:gap-5 gap-4">
           <a
-            href="tel:+1-123-456-7890"
+            href="tel:+918075426491"
             target="_blank"
             className="inline-flex items-center gap-3 border-b border-b-[#2F2F37] pb-1"
           >
             <span className="text-[#F2F2F3] xl:text-[19.5px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-[10px] font-medium">
-              +1-123-456-7890
+              +91 8075426491
             </span>
             <img
               src="/pages/home/icons/arrow-top-right.svg"
@@ -121,12 +121,12 @@ export default function Contact() {
             />
           </a>
           <a
-            href="mailto:info@damienbraunphotography.com"
+            href="mailto:uievrdesigns@gmail.com"
             target="_blank"
             className="inline-flex items-center gap-3 border-b border-b-[#2F2F37] pb-1"
           >
             <span className="text-[#F2F2F3] xl:text-[19.5px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-[10px] font-medium">
-              info@damien braunphotography.com
+              uievrdesigns@gmail.com
             </span>
             <img
               src="/pages/home/icons/arrow-top-right.svg"

@@ -50,7 +50,7 @@ export default function Home() {
         className={`min-h-[3000px] bg-[#080716] bg-[url("/pages/home/hero-bg-svg.svg")] bg-repeat bg-top bg-fixed`}
       >
         <Header />
-        <div className='overflow-hidden 2xl:space-y-28 xl:space-y-24 lg:space-y-20 md:space-y-16 sm:space-y-14 space-y-6'>
+        <div className="overflow-hidden 2xl:space-y-28 xl:space-y-24 lg:space-y-20 md:space-y-16 sm:space-y-14 space-y-6">
           <Hero />
           <OurClients />
           <StepsToWorkWithUs />

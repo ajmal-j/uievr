@@ -26,9 +26,9 @@ export default function OurWorks() {
       <ParallaxProvider>
         <motion.div
           layout
-          className="w-full relative min-h-[min(100dvh,800px)]"
+          className="w-full relative min-h-[min(100dvh,800px)] h-full"
         >
-          <motion.div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center w-full md:gap-x-3 sm:gap-x-2 gap-x-1 pointer-events-none sm:space-y-0 -space-y-[100px]">
+          <motion.div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center w-full md:gap-x-3 sm:gap-x-2 gap-x-1 pointer-events-none sm:space-y-0 -space-y-[100px] h-full">
             <ParallaxImage
               setIndex={setIndex}
               activeIndex={activeIndex}
@@ -112,14 +112,14 @@ export default function OurWorks() {
             <ParallaxImage
               setIndex={setIndex}
               activeIndex={activeIndex}
-              speed={-10}
+              speed={10}
               index={8}
               path="/pages/home/images/works-parallax/4.png"
             />
             <ParallaxImage
               setIndex={setIndex}
               activeIndex={activeIndex}
-              speed={-10}
+              speed={-5}
               index={9}
               path="/pages/home/images/works-parallax/2.png"
             />
@@ -155,7 +155,7 @@ function ParallaxImage({
   const isActive = activeIndex === index;
 
   return (
-    <div className="col-span-1 w-full">
+    <div className="col-span-1 2xl:min-h-[800px] xl:min-h-[770px] lg:min-h-[620px] md:min-h-[500px] sm:min-h-[500px] min-h-[410px] w-full h-full">
       <div
         className={
           activeIndex === index
@@ -181,8 +181,8 @@ function ParallaxImage({
             }}
             src={path}
             className={cn(
-              `md:rounded-[11px] sm:rounded-[7px] rounded-[4px] md:border-[5px] sm:border-[3px] border-[2px] border-black object-contain object-top w-full pointer-events-auto ${
-                isActive ? "overflow-auto max-h-[90dvh] h-full" : ""
+              `md:rounded-[11px] sm:rounded-[7px] rounded-[4px] md:border-[5px] sm:border-[3px] border-[2px] border-black object-contain object-top pointer-events-auto ${
+                isActive ? "overflow-auto max-h-[90dvh]" : ""
               } bg-black`,
               !isActive && className
             )}

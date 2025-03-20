@@ -4,6 +4,9 @@ import Header from "../../layouts/header";
 import HeroGradientSvg from "./hero-gradient-svg";
 
 export default function Hero() {
+  const contactNumber: number = +917994551553;
+  const whatsappUrl = `https://wa.me/${contactNumber}`;
+
   return (
     <div className="xl:min-h-[max(950px,100dvh)] lg:min-h-[max(800px,100dvh)] min-h-[max(600px,100dvh)] flex flex-col gap-5 items-center justify-between h-full font-dmSans relative">
       <HeroGradientSvg />
@@ -154,7 +157,11 @@ export default function Hero() {
           </div>
           <div className="flex-1 flex justify-end items-center'">
             <div className="bg-gradient-to-br from-[#2CCA5D]/40 via-white/10 to-transparent p-[2px] rounded-full">
-              <button className="relative flex items-center justify-center md:gap-5 sm:gap-3 gap-1.5 rounded-full md:px-7 sm:px-6 px-5 md:py-5 sm:py-4 py-3 bg-gradient-to-b from-[#21202E] to-[#080716] overflow-hidden">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                className="relative flex items-center justify-center md:gap-5 sm:gap-3 gap-1.5 rounded-full md:px-7 sm:px-6 px-5 md:py-5 sm:py-4 py-3 bg-gradient-to-b from-[#21202E] to-[#080716] overflow-hidden"
+              >
                 <img
                   src="/pages/home/icons/whatsapp-icon.svg"
                   className="md:w-[33px] sm:w-[27px] w-[18px] object-contain"
@@ -163,7 +170,7 @@ export default function Hero() {
                 <h4 className="text-white font-black font-urbanist uppercase md:text-[17px] sm:text-[15px] text-[10px] text-nowrap leading-none">
                   Chat with us
                 </h4>
-              </button>
+              </a>
             </div>
           </div>
         </div>
