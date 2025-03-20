@@ -6,6 +6,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Uievr",
   description: "Uievr is a web design and development studio.",
+  icons: {
+    icon: "/web-icon.png",
+  },
 };
 
 export default function RootLayout({
