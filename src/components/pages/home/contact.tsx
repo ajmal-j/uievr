@@ -12,7 +12,10 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import validator from "validator";
 import { z } from "zod";
-import { Resend } from "resend";
+import axios from "axios";
+import { toast } from "sonner";
+import { useState } from "react";
+import { Loader2 } from "lucide-react";
 
 const formSchema = z.object({
   firstName: z
@@ -53,6 +56,7 @@ const formSchema = z.object({
 });
 
 export default function Contact() {
+  const [loading, setLoading] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -66,29 +70,21 @@ export default function Contact() {
 
   // 2. Define a submit handler.
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const apiKey =
-      process.env.NEXT_PUBLIC_RESEND_API_KEY ??
-      "re_S1B8v4oL_PcE6kBaBeKozmVnKxECYLCVr";
+    try {
+      setLoading(true);
 
-    if (!apiKey) {
-      alert("Resend API key not found");
-    }
+      const response = await axios.post("/api/contact", values);
 
-    const resend = new Resend(apiKey);
+      const message = response.data.message;
 
-    const { data, error } = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: ["delivered@resend.dev"],
-      subject: "Hello world",
-      react: EmailTemplate(values),
-    });
+      toast.success(message ? message : "Thank you for contacting us.");
 
-    if (error) {
-      alert(error);
-    }
-
-    if (data) {
-      alert("Email sent successfully");
+      form.reset();
+    } catch (error) {
+      console.log(error);
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -245,11 +241,15 @@ export default function Contact() {
                     send message
                   </span>
                   <span className="bg-[#4A2CED] xl:px-9 lg:px-8 md:px-7 sm:px-6 px-5 md:py-4 sm:py-3 py-2 rounded-full shadow-inner shadow-white/30 w-full grid place-content-center">
-                    <img
-                      src="/pages/home/icons/arrow-top-right.svg"
-                      className="xl:w-[20px] lg:w-[16px] md:w-[14px] sm:w-[12px] w-[10px] object-contain mt-[2px]"
-                      alt="Arrow top right"
-                    />
+                    {loading ? (
+                      <Loader2 className="text-white animate-spin xl:w-[20px] lg:w-[16px] md:w-[14px] sm:w-[12px] w-[10px] object-contain" />
+                    ) : (
+                      <img
+                        src="/pages/home/icons/arrow-top-right.svg"
+                        className="xl:w-[20px] lg:w-[16px] md:w-[14px] sm:w-[12px] w-[10px] object-contain mt-[2px]"
+                        alt="Arrow top right"
+                      />
+                    )}
                   </span>
                 </button>
               </div>
@@ -257,24 +257,6 @@ export default function Contact() {
           </Form>
         </div>
       </div>
-    </div>
-  );
-}
-
-function EmailTemplate({
-  email,
-  firstName,
-  lastName,
-  message,
-  phone,
-}: z.infer<typeof formSchema>) {
-  return (
-    <div>
-      <p>First Name: {firstName}</p>
-      <p>Last Name: {lastName}</p>
-      <p>Email: {email}</p>
-      <p>Phone: {phone}</p>
-      <p>Message: {message}</p>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-page-custom-font */
+import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         />
       </head>
       <body>{children}</body>
+      <Toaster />
     </html>
   );
 }
