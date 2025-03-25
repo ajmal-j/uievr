@@ -17,13 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html>
       <head>
         <meta charSet="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
         />
         <meta name="theme-color" content="#080716" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,8 +37,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
-      <Toaster />
+      <body>
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }
