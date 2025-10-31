@@ -1,19 +1,17 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import Header from "@/components/layouts/header";
 import Footer from "@/components/layouts/footer";
+import Header from "@/components/layouts/header";
 import ClientTestimonials from "@/pages/home/client-testimonials";
 import Contact from "@/pages/home/contact";
 import EvrExplanation from "@/pages/home/evr-explanation";
 import Hero from "@/pages/home/hero";
 import InfiniteHorizontalMovingCards from "@/pages/home/infinite-horizontal-moving-cards";
 import LetsWorkGradientText from "@/pages/home/lets-work-gradient-text";
-import OurTools from "@/pages/home/our-tools";
 import OurServices from "@/pages/home/our-services";
-import OurTeam from "@/pages/home/our-team";
+import OurTools from "@/pages/home/our-tools";
 import OurWorks from "@/pages/home/our-works";
-import Pricing from "@/pages/home/pricing";
 import StepsToWorkWithUs from "@/pages/home/steps-to-work-with-us";
 import { ReactLenis } from "lenis/react";
 import { useEffect, useRef } from "react";
@@ -57,8 +55,8 @@ export default function Home() {
           <OurServices />
           <EvrExplanation />
           <OurWorks />
-          <Pricing />
-          <OurTeam />
+          {/* <Pricing /> */}
+          {/* <OurTeam /> */}
           <ClientTestimonials />
           <LetsWorkGradientText />
           <Contact />
